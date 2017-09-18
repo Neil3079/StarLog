@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct LoggerConfiguration<X, LogFormatter: LogFormatterType> where LogFormatter.DomainType == X {
-  let logLevel: LogLevel<X>
+public struct LoggerConfiguration<Domain, LogFormatter: LogFormatterType> where LogFormatter.DomainType == Domain {
+  let logLevel: LogLevel<Domain>
   let formatter: LogFormatter
   let remoteLogResource: RemoteLogResource?
   let informRemoteLog: Bool

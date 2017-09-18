@@ -15,7 +15,6 @@ public protocol LogFormatterType {
 public struct StringDomainLogFormatter<T: RawRepresentable & Equatable>: LogFormatterType where T.RawValue == String {
   public typealias DomainType = T
   
-
   public func formattedLogMessage(withLog log: String, inDomain domain: T) -> String {
     return domain.rawValue + ": " + log
   }
