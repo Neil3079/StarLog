@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StarLog_Example' do
+  pod 'StarLog', :path => '../'
+
+  target 'StarLog_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
