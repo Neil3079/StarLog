@@ -1,0 +1,6 @@
+framework module Pods_StarLog_Tests {
+  umbrella header "Pods-StarLog_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

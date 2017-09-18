@@ -1,0 +1,6 @@
+framework module StarLog {
+  umbrella header "StarLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

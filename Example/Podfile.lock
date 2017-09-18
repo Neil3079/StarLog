@@ -1,0 +1,16 @@
+PODS:
+  - StarLog (0.1.0)
+
+DEPENDENCIES:
+  - StarLog (from `../`)
+
+EXTERNAL SOURCES:
+  StarLog:
+    :path: ../
+
+SPEC CHECKSUMS:
+  StarLog: 22e28676479cc3bd42cf883522bdf66fb5713df2
+
+PODFILE CHECKSUM: 27d512cc2eb8e7399548c1f9efd7cb03a91611a4
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,22 @@
+{
+  "name": "StarLog",
+  "version": "0.1.0",
+  "summary": "A short description of StarLog.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Neil3079/StarLog",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Neil3079": "neil.horton3079@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Neil3079/StarLog.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "StarLog/Classes/**/*"
+}
