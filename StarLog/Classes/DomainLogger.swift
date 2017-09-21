@@ -7,19 +7,19 @@
 
 import Foundation
 
-protocol LoggerType {
+public protocol LoggerType {
   associatedtype Domain
   func log(message: String, inDomain domain: Domain)
 }
 
-public final class Logger<LogDomain, LogFormatter: LogFormatterType>: LoggerType where LogFormatter.DomainType == LogDomain {
-  private let logConfig: LoggerConfiguration<LogDomain,LogFormatter>
+public final class Logger<LogFormatter: LogFormatterType>: LoggerType {
+  private let logConfig: LoggerConfiguration<LogFormatter>
   
-  public init(logConfig: LoggerConfiguration<LogDomain,LogFormatter>) {
+  public init(logConfig: LoggerConfiguration<LogFormatter>) {
     self.logConfig = logConfig
   }
   
-  public func log(message: String, inDomain domain: LogDomain) {
+  public func log(message: String, inDomain domain: LogFormatter.DomainType) {
     DispatchQueue.global(qos: .background).async {
       switch self.logConfig.logLevel {
       case .none:
@@ -33,7 +33,7 @@ public final class Logger<LogDomain, LogFormatter: LogFormatterType>: LoggerType
     }
   }
   
-  private func writeLog(message: String, inDomain domain: LogDomain) {
+  private func writeLog(message: String, inDomain domain: LogFormatter.DomainType) {
     let formattedMessage = logConfig.formatter.formattedLogMessage(withLog: message, inDomain: domain)
     if logConfig.informLocalLog {
       print(formattedMessage)

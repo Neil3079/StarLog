@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C806161F73AF0D008C5E19 /* AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C806151F73AF0D008C5E19 /* AppLog.swift */; };
+		37C806181F73AF52008C5E19 /* AppLogDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C806171F73AF52008C5E19 /* AppLogDomain.swift */; };
+		37C8061B1F73AFEC008C5E19 /* LocalHostRemoteLpgResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C8061A1F73AFEC008C5E19 /* LocalHostRemoteLpgResource.swift */; };
 		480DFFE7DCFDD923E892512C /* Pods_StarLog_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0AB6D333CD14226DDD7C99 /* Pods_StarLog_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,8 +33,11 @@
 /* Begin PBXFileReference section */
 		0E7B78F8AEEB21285C688282 /* Pods-StarLog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLog_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarLog_Tests/Pods-StarLog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2886C1766EBB459B622511F6 /* Pods-StarLog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLog_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarLog_Example/Pods-StarLog_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5A8C252C9A908F1AC09217CE /* StarLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = StarLog.podspec; path = ../StarLog.podspec; sourceTree = "<group>"; };
-		5B5193185E782B56F840AA27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		37C806151F73AF0D008C5E19 /* AppLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLog.swift; sourceTree = "<group>"; };
+		37C806171F73AF52008C5E19 /* AppLogDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogDomain.swift; sourceTree = "<group>"; };
+		37C8061A1F73AFEC008C5E19 /* LocalHostRemoteLpgResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalHostRemoteLpgResource.swift; sourceTree = "<group>"; };
+		5A8C252C9A908F1AC09217CE /* StarLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StarLog.podspec; path = ../StarLog.podspec; sourceTree = "<group>"; };
+		5B5193185E782B56F840AA27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5E0AB6D333CD14226DDD7C99 /* Pods_StarLog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* StarLog_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarLog_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +50,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		D024D6579DEF9371B96B5464 /* Pods-StarLog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLog_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarLog_Tests/Pods-StarLog_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F2442CA4C08B866D3E8DA0D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F2442CA4C08B866D3E8DA0D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F475021CAEC421B372B85BB0 /* Pods_StarLog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarLog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF75300BD7F360E9D4FFD6C5 /* Pods-StarLog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarLog_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarLog_Example/Pods-StarLog_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +86,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		37C806191F73AF92008C5E19 /* Log Support */ = {
+			isa = PBXGroup;
+			children = (
+				37C806151F73AF0D008C5E19 /* AppLog.swift */,
+				37C806171F73AF52008C5E19 /* AppLogDomain.swift */,
+				37C8061A1F73AFEC008C5E19 /* LocalHostRemoteLpgResource.swift */,
+			);
+			name = "Log Support";
+			sourceTree = "<group>";
+		};
 		3D6EAFAF5AD2CEB808E8FFE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +129,7 @@
 		607FACD21AFB9204008FA782 /* Example for StarLog */ = {
 			isa = PBXGroup;
 			children = (
+				37C806191F73AF92008C5E19 /* Log Support */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -361,8 +378,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C806181F73AF52008C5E19 /* AppLogDomain.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				37C806161F73AF0D008C5E19 /* AppLog.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				37C8061B1F73AFEC008C5E19 /* LocalHostRemoteLpgResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,10 +7,18 @@
 
 import Foundation
 
-public struct LoggerConfiguration<Domain, LogFormatter: LogFormatterType> where LogFormatter.DomainType == Domain {
-  let logLevel: LogLevel<Domain>
+public struct LoggerConfiguration<LogFormatter: LogFormatterType> {
+  let logLevel: LogLevel<LogFormatter.DomainType>
   let formatter: LogFormatter
   let remoteLogResource: RemoteLogResource?
   let informRemoteLog: Bool
   let informLocalLog: Bool
+  
+  public init(logLevel: LogLevel<LogFormatter.DomainType>, formatter: LogFormatter, remoteLogResource: RemoteLogResource? = nil, informRemoteLog: Bool = false, informLocalLog: Bool = true) {
+    self.logLevel = logLevel
+    self.formatter = formatter
+    self.remoteLogResource = remoteLogResource
+    self.informRemoteLog = informRemoteLog
+    self.informLocalLog = informLocalLog
+  }
 }
